@@ -19,3 +19,6 @@
     margin-right: 30rem;
     margin-top: 2rem;
 }
+.selected {
+    background-color: aqua;
+}
