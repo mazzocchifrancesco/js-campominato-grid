@@ -1,5 +1,5 @@
 container=document.getElementById("griglia");
-generaSq();
+generaSq(container, "div", "quadrato1");
 
 
 
@@ -7,11 +7,16 @@ generaSq();
 
 
 
-function generaSq () {
+
+
+
+// FUNZIONI
+
+function generaSq (contenitore, elemento, classe) {
     for (let i = 0; i < 100; i++) {
-        const square= document.createElement("div");
-        square.classList.add("quadrato1");
-        container.append(square);
+        const square= document.createElement(elemento);
+        square.classList.add(classe);
+        contenitore.append(square);
         square.innerHTML = i+1;
 
     }
