@@ -6,13 +6,23 @@
     flex-wrap: wrap;
 }
 
-.quadrato1 {
-    height: calc(100% / 10);
-    width: calc(100% / 10);
+.quadrato {
     border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.dif1 {
+    height: calc(100% / 10);
+    width: calc(100% / 10);
+}
+.dif2 {
+    height: calc(100% / 9);
+    width: calc(100% / 9);
+}
+.dif3 {
+    height: calc(100% / 7);
+    width: calc(100% / 7);
 }
 
 #start {
@@ -22,3 +32,4 @@
 .selected {
     background-color: aqua;
 }
+#selettore {width: 10rem;}
