@@ -1,0 +1,13 @@
+#griglia {
+    height: 800px;
+    width: 800px;
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.quadrato1 {
+    height: calc(100% / 10);
+    width: calc(100% / 10);
+    border: 1px solid black;
+}
