@@ -1,28 +1,25 @@
 const start=document.getElementById("start");
-container=document.getElementById("griglia");
-let celle=50;
+const container=document.getElementById("griglia");
+let celle;
+
+// CLICK START
 
 start.addEventListener("click", function() {
+    container.innerHTML="";
     const difficolta=document.getElementById("selettore").value
+    // condizioni
     if (difficolta=="dif1") {celle=100;}
     else if (difficolta=="dif2") {celle=81;}
     else if (difficolta=="dif3") {celle=49;}
-    generaSq(container, "div", "quadrato", difficolta, celle)
+    else {return;}
+    // genera celle
+    generaGrid(container, "div", "quadrato", difficolta, celle)
 });
-
-
-
-
-
-
-
-
-
 
 // FUNZIONI
 
-function generaSq (contenitore, elemento, classe1, classe2, celle) {
-    for (let i = 0; i < celle; i++) {
+function generaGrid (contenitore, elemento, classe1, classe2, celle) {
+    for (let i = 1; i <= celle; i++) {
         // crea elemento
         const square= document.createElement(elemento);
         // aggiunge classi
@@ -31,10 +28,10 @@ function generaSq (contenitore, elemento, classe1, classe2, celle) {
         // attacca nel DOM
         contenitore.append(square);
         // aggiunge scritta
-        square.innerHTML = i+1;
+        square.innerText = i;
         // aggiunge evento click
         square.addEventListener("click", function() {
-            console.log(i+1);
+            console.log(i);
             square.classList.toggle("selected");
         })
     }

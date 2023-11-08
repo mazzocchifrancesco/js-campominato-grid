@@ -1,3 +1,9 @@
+
+/* HEADER */
+#selettore {height: 38px;}
+header {height: 38px;}
+
+
 #griglia {
     height: 800px;
     width: 800px;
@@ -11,25 +17,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.dif1 {
-    height: calc(100% / 10);
-    width: calc(100% / 10);
-}
-.dif2 {
-    height: calc(100% / 9);
-    width: calc(100% / 9);
-}
-.dif3 {
-    height: calc(100% / 7);
-    width: calc(100% / 7);
+    aspect-ratio: 1;
 }
 
-#start {
-    margin-right: 30rem;
-    margin-top: 2rem;
-}
-.selected {
-    background-color: aqua;
-}
+/* selettore  */
+
+.dif1 {    height: calc(100% / 10);}
+.dif2 {    height: calc(100% / 9);}
+.dif3 {    height: calc(100% / 7);}
+.selected {    background-color: aqua;}
 #selettore {width: 10rem;}
